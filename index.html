@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our First Anniversary</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;500&display=swap');
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #ffe6e6, #ffc1c1);
+      font-family: 'Roboto', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .start-screen {
+      height: 100vh;
+      background: url('us-together.jpg') center center no-repeat;
+      background-size: contain;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .start-btn {
+      padding: 15px 30px;
+      background: #e6005c;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .start-btn:hover {
+      background: #cc0052;
+    }
+
+    .scroll-container {
+      display: none;
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+      color: #4a0000;
+      position: relative;
+    }
+
+    h1, h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      text-align: center;
+      color: #b30059;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 1.4em;
+      color: #800033;
+      text-align: center;
+      animation: fadeIn 2s ease forwards;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 30px 0;
+      line-height: 1.8;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    p.highlight {
+      color: #d1005d;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .signature {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      font-size: 2em;
+      margin-top: 60px;
+    }
+
+    .hearts {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url('https://i.imgur.com/3P6Z6JX.png') no-repeat center/contain;
+      animation: floatUp 5s linear infinite;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="start-screen">
+  <h1>Our First Anniversary</h1>
+  <button class="start-btn" onclick="startScroll()">Scroll to Start</button>
+</div>
+
+<div class="scroll-container" id="scrollContainer">
+  <h2>💌 Scrolling Love Letter – From 5 September to Forever</h2>
+  <p class="quote">This is more than a letter.<br>This is a living timeline of our journey — from a quiet September evening to a forever that’s just beginning.</p>
+
+  <p class="highlight">It all began on 5 September 2023 at 5:30 PM.</p>
+  <p>A simple meeting — one moment in time, but little did I know… you would become the center of my world.</p>
+
+  <p class="highlight">We spoke for the first time on 6 September at 11:30 AM.</p>
+  <p>From that day forward, my heart began keeping a quiet record of every moment, every feeling, every smile.</p>
+
+  <p>Then came October. Distance, silence, breaks. But in that space, something grew. A soft spark — a feeling I didn’t understand yet… but couldn’t ignore.</p>
+
+  <p class="highlight">By 22 December, I finally understood: I wasn’t just fond of you — I was in love with you.</p>
+
+  <p>But love — real love — often comes with a storm of patience. January to March felt like holding back a tidal wave. Every day I smiled and spoke to you, while my heart screamed, quietly, “Tell her… just tell her.”</p>
+
+  <p class="highlight">Then came 1 April 2024.</p>
+  <p>I finally did. I told you how I felt. And it wasn’t a joke. It was the most honest confession of my life.</p>
+  <p>You didn’t answer immediately. And that silence? I respected it. Because love waits, too.</p>
+
+  <p class="highlight">And then… on 26 June 2024, you chose me. You promised me.</p>
+  <p>And that moment is etched in my soul.</p>
+
+  <p>But love isn’t a perfect movie. We had our distances. We cried. We misunderstood. You saw the parts of me that I hadn't yet faced.</p>
+  <p>You noticed every tiny detail. I missed some of them. Not because I didn’t care— but because I was still learning how to love you the way you deserve.</p>
+  <p>I hurt you, sometimes unknowingly. But you never stopped believing in me.</p>
+
+  <p class="highlight">After the vacation, I picked you up at the airport with a flower.</p>
+  <p>You returning to me — felt like everything realigned.</p>
+  <p>We started living life together: College classes, evening walks to DLF, Infocity, even KIIT Square. Snacks, arguments, laughter — us.</p>
+
+  <p class="highlight">1 September — you gave me a white rose.</p>
+  <p>Delicate, thoughtful, meaningful. Like you.</p>
+
+  <p class="highlight">1 November — our first college fest.</p>
+  <p>You wore that white kurti with jhumkas… ufff. I was completely lost in you.</p>
+
+  <p class="highlight">9 November — you forgave me.</p>
+  <p>Again. Stronger.</p>
+
+  <p class="highlight">24 November — that pink top. That ponytail.</p>
+  <p>I fell. Again. Like the first time never happened.</p>
+
+  <p class="highlight">1 December — Jaydev Vartika trip.</p>
+  <p>Just us, just friends, but so much more.</p>
+
+  <p class="highlight">7 December — cultural night. One-piece dress.</p>
+  <p>My heart didn’t stand a chance.</p>
+
+  <p class="highlight">23 December — my black jacket. Your open hair.</p>
+  <p>You looked divine.</p>
+
+  <p class="highlight">1 January 2025 — we told the world.</p>
+  <p>And my official proposal. It was no longer a secret. It was us, out loud.</p>
+
+  <p class="highlight">1 February — you changed your travel plans for me.</p>
+  <p>So I could attend my seminar. Selfless, beautiful love.</p>
+
+  <p class="highlight">2 February — Puri trip.</p>
+  <p>Waves. Smiles. Love.</p>
+
+  <p class="highlight">14 February — our first real date. Movie: Chhava.</p>
+  <p>But my eyes were only on you.</p>
+
+  <p class="highlight">16 February — your gift: that bag.</p>
+
+  <p class="highlight">1 March — the red one-piece.</p>
+  <p>You were stunning.</p>
+
+  <p class="highlight">22 March — shopping together.</p>
+  <p>Small things, shared joy.</p>
+
+  <p class="highlight">28 March — the saree.</p>
+  <p>You weren’t just beautiful. You were breathtaking.</p>
+
+  <p class="highlight">5 April — mehendi with my name hidden.</p>
+  <p>You wrote me into your skin.</p>
+
+  <p>We made Ghibli art together after that — like creating little windows into our love story.</p>
+
+  <p>Yes, we’ve fought. Yes, we’ve repeated mistakes. But we’ve also repeated forgiveness. We’ve chosen each other — again and again.</p>
+
+  <p class="highlight">You chose the same internship — just to be close.</p>
+  <p>Not online. Not on calls. But beside me.</p>
+
+  <p class="highlight">14 June 2025 — Zaika Palace.</p>
+  <p>You were there. Smiling. Holding my hand. A dream fulfilled.</p>
+
+  <p class="highlight">❤ So here we are. One year.</p>
+  <p>A year of beginnings, breakdowns, growth, and countless breathtaking moments.</p>
+
+  <p class="highlight">Thank you</p>
+  <p>For loving me through my flaws. For holding me even when I pushed away. For being you.</p>
+
+  <p class="highlight">This is our first anniversary — but only the first of many.</p>
+
+  <p class="highlight">💍 I love you.</p>
+  <p>More than words. More than mistakes. More than time itself.</p>
+
+  <p>Forever yours. Growing. Healing. Loving. Just for you.</p>
+
+  <p class="highlight">🌹 Happy Anniversary, my love.</p>
+
+  <div class="signature">Forever yours,<br/>Bubbu</div>
+</div>
+
+<div class="hearts" id="hearts"></div>
+
+<audio id="bgMusic" loop autoplay>
+  <source src="co2.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function startScroll() {
+  document.querySelector('.start-screen').style.display = 'none';
+  document.getElementById('scrollContainer').style.display = 'block';
+  generateHearts();
+  document.getElementById('bgMusic').play();
+}
+
+function generateHearts() {
+  const hearts = document.getElementById('hearts');
+  for (let i = 0; i < 30; i++) {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.style.left = Math.random() * 100 + '%';
+    heart.style.animationDelay = Math.random() * 5 + 's';
+    hearts.appendChild(heart);
+  }
+}
+</script>
+
+</body>
+</html>
